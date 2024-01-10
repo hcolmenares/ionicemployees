@@ -1,0 +1,18 @@
+ion-content {
+    --ion-background-color: url(../../../assets/corporativo.gif);
+}
+
+.d-flex-center {
+    height: 90vh;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(191, 33, 156, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(191, 33, 156, 0.3);
+    width: 100%;
+    min-height: 100vh;
+}
