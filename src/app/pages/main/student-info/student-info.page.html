@@ -1,0 +1,21 @@
+<app-header [showMenu]="true" title="Detalles del estudiantes"></app-header>
+
+<ion-content [routerLink]="['/student-info', student.id]">
+
+  <div class="info-container">
+    <div class="structure">
+      <h2 class="general-header">Información del estudiante</h2>
+
+      <div class="student-info" *ngIf="student">
+        <h2 class="student-heading">{{ student.name }}</h2>
+        <div class="student-details">
+          <img class="student-img" [src]="student.img" alt="Foto del Estudiante" />
+          <div class="info-row" *ngFor="let info of studentInfo">
+            <span class="info-label">{{ info.label }}:</span>
+            <p>{{ student[info.key] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

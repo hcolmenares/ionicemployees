@@ -1,6 +1,6 @@
 <app-header title="Iniciar Sesión"></app-header>
 
-<ion-content>
+<ion-content class="content">
   <div class="d-flex-center">
 
     <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form" (keypress.enter)="submit()">
@@ -33,11 +33,11 @@
 
       <p routerLink="forgot-password" class="ion-text-end">¿Olvidaste la contraseña?</p>
 
-      <ion-button class="submit" type="submit" expand="block" mode="ios" fill="outline" [disabled]="form.invalid">
+      <ion-button class="submit custom-button" type="submit" expand="block" mode="ios" fill="outline" [disabled]="form.invalid">
         Ingresar
       </ion-button>
 
-      <ion-button routerLink="sing-up" class="ion-margin-top" expand="block" mode="ios" fill="outline">
+      <ion-button class="ion-margin-top custom-button" routerLink="sing-up" expand="block" mode="ios" fill="outline">
         Registrarse
       </ion-button>
 

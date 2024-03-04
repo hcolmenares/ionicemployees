@@ -13,8 +13,10 @@ import { map } from 'rxjs';
 })
 export class HomePage implements OnInit {
 
-  loading: boolean = false;
-  employees: Employees[] = [];
+  loading:boolean = false;
+  employees:Employees[] = [];
+  imgSrc:string = 'https://www.semana.com/resizer/5nLprnSmrtWrdAXpgWXYjnaIwYI=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/CXZW7ZI5GZC5ZNJW2F55GL5SC4.jpg';
+  contentArray:any[] = [];
 
   constructor(
     private utilsService: UtilsService,
@@ -22,8 +24,17 @@ export class HomePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    const awa = '';
+    this.initArrays();
     // this.getEmployee();
+  }
+
+  initArrays() {
+    this.contentArray = [
+      {
+        route: '/main/estudiantes',
+        text: 'Listado de estudiantes'
+      },
+    ];
   }
 
   ionViewWillEnter() {
@@ -132,6 +143,10 @@ export class HomePage implements OnInit {
 
   getBills() {
     return this.employees.reduce((index, employee) => index + employee.salario, 0)
+  }
+
+  redirectTo(route:string) {
+    this.utilsService.routerLink(route);
   }
 
 }

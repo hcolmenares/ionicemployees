@@ -1,0 +1,16 @@
+<app-header [showMenu]="true" title="Información de estudiantes"></app-header>
+
+<ion-content>
+  <div class="student">
+    <h2 class="content-box_heading">Base de datos - Estudiantes</h2>
+
+    <p class="content-row_text">
+      La Base de Datos de Estudiantes es un repositorio digital dedicado a la
+      gestión y consulta de información sobre estudiantes, facilitando el acceso
+      a datos demográficos, académicos y de rendimiento para instituciones
+      educativas y profesionales.
+    </p>
+
+    <app-info-card class="info-card" [students]="studentsArray"></app-info-card>
+  </div>
+</ion-content>

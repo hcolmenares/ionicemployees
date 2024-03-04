@@ -1,0 +1,153 @@
+@import '../theme/custom-variables.scss';
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: $gray;
+}
+
+.container {
+    width: 95%;
+    max-width: 52rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 $separacion 0;
+    color: $gray;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+ion-content,
+ion-button,
+ion-item,
+ion-img {
+    --background: #{$white};
+    --color: #{$black};
+}
+
+ion-icon,
+ion-button ion-icon {
+    font-size: 2rem;
+}
+
+ion-button {
+    text-transform: none;
+}
+
+.new-background-color{
+    --background: $primary;
+}
+
+.safe-p-bottom{
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.submit {
+    margin-top: 4rem;
+}
+
+.empty {
+    text-align: center;
+    padding: 6rem;
+    opacity: 30%;
+
+    ion-icon {
+        font-size: 100px;
+    }
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.custom-input {
+    --border-color: #e0e0e0;
+    --border-radius: 1.5rem;
+    --border-style: solid;
+    --border-width: 0.1rem;
+    margin: 2rem 0;
+
+    ion-label {
+        position: relative;
+        bottom: 0.2rem;
+    }
+
+    .eye-icon {
+        position: relative;
+        top: 1.3rem;
+    }
+}
+
+.product-item {
+    --padding-top: 2rem;
+
+    ion-avatar {
+        width: 7rem;
+        height: 8rem;
+        --border-radius: 1.5rem;
+    }
+
+    .name {
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+    }
+
+    .data {
+        font-size: 1.3rem;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    .option-btn {
+        font-size: 2.7rem;
+    }
+
+    ion-chip {
+        font-size: 1.4rem;
+        border-radius: 1rem;
+        margin-left: 0;
+    }
+}

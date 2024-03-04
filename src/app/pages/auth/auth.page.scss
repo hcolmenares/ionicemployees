@@ -1,0 +1,41 @@
+@import '../../../theme/custom-variables.scss';
+
+ion-button,
+.validators {
+    font-size: 1.5rem;
+}
+
+.validators {
+    color: $danger;
+    text-align: center;
+}
+
+.auth-form {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.ion-text-end {
+    color: $dark-primary;
+}
+
+.custom-button {
+    --background: #{$white};
+    --border-color: #{$primary};
+
+    &:hover {
+        --background: #{$primary};
+        --color: #{$white};
+    }
+}
+
+@media (min-width: $tablet) {
+    .auth-form {
+        width: 50rem;
+    }
+
+    .add-update-modal {
+        --height: 68rem;
+    }
+}

@@ -1,0 +1,14 @@
+<ion-card class="card" *ngFor="let student of students" (click)="goTo('main/student-info')">
+  <div class="card-elements">
+   <div class="card-content">
+      <h2 class="card-heading">{{ student.name }}</h2>
+      <ion-card-content class="card-info">
+        <p><span>Código</span>: {{ student.code }}</p>
+        <p><span>Edad</span>: {{ student.age }}</p>
+        <p><span>Ciudad</span>: {{ student.city }}</p>
+        <p><span>Teléfono</span>: {{ student.phoneNumber }}</p>
+      </ion-card-content>
+    </div>
+    <ion-img class="card-img" [src]="student.img"></ion-img>
+  </div>
+</ion-card>

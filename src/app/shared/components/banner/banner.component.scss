@@ -1,0 +1,47 @@
+@import "../../../../theme/custom-variables.scss";
+
+/*** Content - Banner  ***/
+
+.content-banner {
+    background-color: $dark-primary;
+    color: $white;
+}
+
+.content-banner_title {
+    margin: 0;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: fit-content;
+    font-style: italic;
+    color: $white;
+}
+
+/*** Content Heading ***/
+
+.content-heading,
+.content-heading_img {
+    max-height: 28rem;
+    width: 100%;
+}
+
+.content-heading {
+    position: relative;
+}
+
+.content-heading_img {
+    object-fit: cover;
+}
+
+.content-heading_title {
+    padding: 2rem;
+    z-index: 2;
+    min-height: 24rem;
+    width: 100%;
+    position: absolute;
+    color: $white;
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), $primary);
+}

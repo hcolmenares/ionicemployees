@@ -18,6 +18,21 @@ const routes: Routes = [
         loadChildren: () =>
           import('./profile/profile.module').then((m) => m.ProfilePageModule),
       },
+      {
+        path: 'estudiantes',
+        loadChildren: () =>
+          import('./estudiantes/estudiantes.module').then(
+            (m) => m.EstudiantesPageModule
+          ),
+      },
+      {
+        path: 'student-info',
+        // path: 'student-info/:id',
+        loadChildren: () =>
+          import('./student-info/student-info.module').then(
+            (m) => m.StudentInfoPageModule
+          ),
+      },
     ],
   },
 ];

@@ -1,0 +1,30 @@
+// Media Queries Sizes
+
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colors - Principal
+
+$primary: #003466; // Tonalidad verde limón
+$dark-primary: #07182e; // Color de contraste al verde, compatible con #333
+$secondary: #92D050; // Usamos el verde limón como secundario también
+$dark-secundary: #1B5E20; // Color de contraste al verde, compatible con #333
+$white: #fff;
+$gray: #404040;
+$background-header: #cbcbcb;
+$border-input: #e0e0e0;
+$danger: #EB445A; // Un color de alerta que complementa el esquema de colores
+$black: #333;
+
+// Colors - Cards
+
+$card-primary: #92D050; // Usamos el verde limón como color principal para las tarjetas
+$card-dark-primary: #1B5E20; // Color de contraste al verde, compatible con #333
+$card-secondary: #92D050; // Usamos el verde limón como secundario para las tarjetas
+$card-button-bg: #f3f3f3;
+$card-button-border: #cccccc;
+
+// Spacing
+
+$separacion: 5rem;

@@ -1,0 +1,10 @@
+@import '../../../../theme/custom-variables.scss';
+
+.login-icon,
+.login-input {
+    font-size: 2rem;
+}
+
+.ion-color-primary {
+    --color: #{$primary};
+}
